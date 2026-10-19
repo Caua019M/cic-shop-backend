@@ -2,6 +2,8 @@
 
 API Express de demonstração com 20 produtos, checkout e reset de estoque. Não processa pagamentos.
 
+API publicada: https://cic-shop-backend.onrender.com (health check: https://cic-shop-backend.onrender.com/health).
+
 ## Executar
 
 ```sh
@@ -11,9 +13,9 @@ npm start
 
 `GET http://localhost:3001/health` deve responder `{"ok":true,"products":20}`.
 
-## Publicar no Render
+## Publicação no Render
 
-Crie um Web Service conectado a este repositório. O `render.yaml` define plano Free, build `npm install`, início `npm start` e verificação em `/health`. Na criação manual, use esses mesmos comandos. O servidor usa a variável `PORT` fornecida pelo Render.
+O Web Service está conectado a este repositório no plano Free, com build `npm install`, início `npm start` e verificação em `/health`. O servidor usa a variável `PORT` fornecida pelo Render.
 
 Rotas: `GET /api/products`, `GET /api/products/:id`, `POST /api/checkout` com `{"items":{"fone-a":1}}` e `POST /api/reset` para restaurar o estoque de demonstração.
 
