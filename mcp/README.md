@@ -15,7 +15,13 @@ As ferramentas consultam dados; elas não fazem compras nem resetam o estoque.
 
 ## Rodar no Windows
 
-Requer Python 3.11 ou superior. Abra o PowerShell nesta pasta (`backend/mcp`) e execute:
+Requer Python 3.11 ou superior. Neste computador com Codex, o script encontra o Python incluído no ambiente. Abra o PowerShell nesta pasta (`backend/mcp`) e execute:
+
+```powershell
+.\iniciar.ps1
+```
+
+O script cria o ambiente Python, instala o SDK MCP na primeira execução e inicia o servidor. Em outros computadores, também é possível preparar tudo manualmente:
 
 ```powershell
 python -m venv .venv
